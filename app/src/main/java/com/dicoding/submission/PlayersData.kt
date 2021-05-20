@@ -1,5 +1,8 @@
 package com.dicoding.submission
 
+import java.util.*
+import kotlin.collections.ArrayList
+
 object PlayersData {
     private val playersNames = arrayOf(
         "Kobe Bryant",
@@ -12,6 +15,18 @@ object PlayersData {
 
 
     )
+
+
+    private val playersPhotos = intArrayOf(
+        R.drawable.kobe_bryant,
+        R.drawable.michael_jordan,
+        R.drawable.tim_duncan,
+        R.drawable.charles_barkley,
+        R.drawable.paul_pierce,
+        R.drawable.gary_payton,
+        R.drawable.isiah_thomas
+    )
+
     private val playersDetails = arrayOf(
         "Kobe Bean Bryant (/ˈkoʊbiː/ KOH-bee; August 23, 1978 – January 26, 2020) was an American professional basketball player. A shooting guard, he spent his entire 20-year career with the Los Angeles Lakers in the National Basketball Association (NBA). Regarded as one of the greatest players of all time, Bryant won five NBA championships, was an 18-time All-Star, a 15-time member of the All-NBA Team, a 12-time member of the All-Defensive Team, the 2008 NBA Most Valuable Player (MVP), and a two-time NBA Finals MVP.",
         "Michael Jeffrey Jordan (born February 17, 1963), also known by his initials MJ, is an American businessman and former professional basketball player. He is the principal owner and chairman of the Charlotte Hornets of the National Basketball Association (NBA) and of 23XI Racing in the NASCAR Cup Series. He played 15 seasons in the NBA, winning six championships with the Chicago Bulls.",
@@ -23,7 +38,6 @@ object PlayersData {
 
 
     )
-    private val playersPhotos = intArrayOf()
     private val playersAges = intArrayOf(
         41,
         58,
@@ -42,8 +56,8 @@ object PlayersData {
         "Seattle SuperSonics",
         "Detroit Pistons"
 
-
     )
+
 
     val listData : ArrayList<Players>
         get() {
