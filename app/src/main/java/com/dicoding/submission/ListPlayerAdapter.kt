@@ -1,5 +1,6 @@
 package com.dicoding.submission
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,6 +17,19 @@ class ListPlayerAdapter(private val listPlayer:ArrayList<Players>) : RecyclerVie
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallBack){
         this.onItemClickCallback = onItemClickCallback
 
+    }
+
+    fun addMore(players : ArrayList<Players>){
+        //listPlayer.clear()
+        listPlayer.addAll(players)
+        Log.e("data",listPlayer.size.toString())
+        notifyDataSetChanged()
+
+    }
+
+    fun clear(){
+        listPlayer.clear()
+        notifyDataSetChanged()
     }
 
     class ListViewHolder(itemview : View) : RecyclerView.ViewHolder(itemview) {

@@ -48,6 +48,7 @@
             android:layout_marginBottom="16dp"
             android:lineSpacingMultiplier="1"
             android:id="@+id/tv_detail_details"
+            android:justificationMode="inter_word"
             />
 
 
